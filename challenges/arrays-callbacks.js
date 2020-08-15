@@ -96,4 +96,17 @@ console.log(consume("Mary", "Poppins", greeting)); // Hello Mary Poppins, nice t
 Stretch: If you haven't already, convert your array method callbacks into arrow functions.
 
 */
+add = (num1,num2) => {
+  return num1+num2;
+}
+multiply = (num1,num2) => {
+  return num1*num2;
+}
+greeting = (first,last) => {
+  return `Hello ${first} ${last}, nice to meet you!`;
+}
 
+const lowCaseAnimalNames2 = zooAnimals.map( x => {return x.animal_name.toLowerCase();});
+console.log(lowCaseAnimalNames2);
+const lowPopulationAnimals2 = zooAnimals.filter( object => {return object.population < 5;});
+console.log(lowPopulationAnimals2);
